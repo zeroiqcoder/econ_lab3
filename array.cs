@@ -25,7 +25,7 @@ namespace lab5_proj
                     Console.WriteLine("Ввод выполнен некорректно");
                 }
             }
-            //Console.WriteLine("Введите длину массива");
+            Console.WriteLine("Введите длину массива");
             string arr_length_input;
             while (true)
             {
