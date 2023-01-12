@@ -9,7 +9,7 @@ namespace lab5_proj
             var timer = new Stopwatch();
 
             string operation;
-            //Console.WriteLine("Введите тип операции: +, -, *, /");
+            Console.WriteLine("Введите тип операции: +, -, *, /");
             while (true)
             {
                 try

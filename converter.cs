@@ -6,7 +6,7 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Введите число для перевода в двадцатеричную систему счисления");
+            Console.WriteLine("Введите число для перевода в двадцатеричную систему счисления");
             //string a;
             //a = Console.ReadLine();
             //int b;
