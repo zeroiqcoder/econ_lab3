@@ -18,7 +18,7 @@ namespace lab5_proj
                     if (operation == "+" || operation == "-" || operation == "*" || operation == "/")
                         break;
                     else
-                        //Console.WriteLine("Нужно ввести +, -, * или /");
+                        Console.WriteLine("Нужно ввести +, -, * или /");
                 }
                 catch
                 {
