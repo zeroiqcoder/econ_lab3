@@ -36,12 +36,12 @@ namespace lab5_proj
                 }
                 catch
                 {
-                    //Console.WriteLine("Ввод выполнен некорректно, необходимо ввести целое число больше 0");
+                    Console.WriteLine("Ввод выполнен некорректно, необходимо ввести целое число больше 0");
                 }
             }
-            //Console.WriteLine("Введите номер типа данных в массиве");
-            //Console.WriteLine("1. Целые числа");
-            //Console.WriteLine("2. Дробные числа");
+            Console.WriteLine("Введите номер типа данных в массиве");
+            Console.WriteLine("1. Целые числа");
+            Console.WriteLine("2. Дробные числа");
             string type_input;
             while (true)
             {
@@ -51,14 +51,14 @@ namespace lab5_proj
                     if (type_input == "1" || type_input == "2")
                         break;
                     else
-                        //Console.WriteLine("Нужно выбрать 1 или 2");
+                        Console.WriteLine("Нужно выбрать 1 или 2");
                 }
                 catch
                 {
-                    //Console.WriteLine("Некорректный ввод");
+                    Console.WriteLine("Некорректный ввод");
                 }
             }
-            //Console.WriteLine("Введите сначала минимальное число для генератора случайных чисел, а затем - максимальное");
+            Console.WriteLine("Введите сначала минимальное число для генератора случайных чисел, а затем - максимальное");
             string rand_min;
             while (true)
             {
@@ -70,7 +70,7 @@ namespace lab5_proj
                 }
                 catch
                 {
-                    //Console.WriteLine("Ввод выполнен некорректно, необходимо ввести число");
+                    Console.WriteLine("Ввод выполнен некорректно, необходимо ввести число");
                 }
             }
             string rand_max;
@@ -86,11 +86,11 @@ namespace lab5_proj
                     if (rand_min_int < rand_max_int)
                         break;
                     else
-                        //Console.WriteLine("Максимальное число должно быть больше минимального");
+                        Console.WriteLine("Максимальное число должно быть больше минимального");
                 }
                 catch
                 {
-                    //Console.WriteLine("Ввод выполнен некорректно, необходимо ввести число");
+                    Console.WriteLine("Ввод выполнен некорректно, необходимо ввести число");
                 }
             }
             ulong arr_length = Convert.ToUInt64(arr_length_input);
@@ -107,7 +107,7 @@ namespace lab5_proj
                     }
                     timer.Stop();
                     TimeSpan GenerationTime = timer.Elapsed;
-                    //Console.WriteLine($"Время, затраченное на генерацию элементами массива: {GenerationTime}");
+                    Console.WriteLine($"Время, затраченное на генерацию элементами массива: {GenerationTime}");
 
                     timer.Start();
 
@@ -119,7 +119,7 @@ namespace lab5_proj
                         {
                             sum += ch;
                         }
-                        //Console.WriteLine($"Сумма: {sum}");
+                        Console.WriteLine($"Сумма: {sum}");
                     }
                     else if (operation == "-")
                     {
@@ -129,7 +129,7 @@ namespace lab5_proj
                         {
                             diff -= ch;
                         }
-                        //Console.WriteLine($"Разность: {diff}");
+                        Console.WriteLine($"Разность: {diff}");
                     }
                     else if (operation == "*")
                     {
@@ -142,7 +142,7 @@ namespace lab5_proj
                             else
                                 continue;
                         }
-                        //Console.WriteLine($"Произведение: {prod}");
+                        Console.WriteLine($"Произведение: {prod}");
                     }
                     else if (operation == "/")
                     {
@@ -155,11 +155,11 @@ namespace lab5_proj
                             else
                                 continue;
                         }
-                        //Console.WriteLine($"Частное: {quo}");
+                        Console.WriteLine($"Частное: {quo}");
                     }
                     timer.Stop();
                     TimeSpan OperationsTime = timer.Elapsed;
-                    //Console.WriteLine($"Время, затраченное на операции с элементами массива: {OperationsTime}");
+                    Console.WriteLine($"Время, затраченное на операции с элементами массива: {OperationsTime}");
                 }
                 else if (type_input == "1")
                 {
@@ -168,7 +168,7 @@ namespace lab5_proj
             }
             catch
             {
-                //Console.WriteLine("Недопустимая длина массива");
+                Console.WriteLine("Недопустимая длина массива");
             }
         }
     }

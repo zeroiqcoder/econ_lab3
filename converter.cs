@@ -10,18 +10,18 @@ namespace ConsoleApp1
             string a;
             a = Console.ReadLine();
             int b;
-            //b = Convert.ToInt32(a);
-            //string result = "";
-            //int t = 0;
+            b = Convert.ToInt32(a);
+            string result = "";
+            int t = 0;
             if (b > 0)
             {
                 while (b >= (20-1))
                 {
-                    //t = b % 20;
-                    //b = (b - t) / 20;
+                    t = b % 20;
+                    b = (b - t) / 20;
                     if (t < 10)
                     {
-                        //result = Convert.ToString(t) + result;
+                        result = Convert.ToString(t) + result;
                     }
                     else
                     {
@@ -66,7 +66,7 @@ namespace ConsoleApp1
             }
             if (b < 10)
             {
-                //result = Convert.ToString(b) + result;
+                result = Convert.ToString(b) + result;
             }
             else
             {
@@ -107,7 +107,7 @@ namespace ConsoleApp1
                         break;
                 }
             }
-            //Console.WriteLine(result);
+            Console.WriteLine(result);
         }
     }
 }
