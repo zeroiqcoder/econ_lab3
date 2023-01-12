@@ -8,7 +8,7 @@ namespace ConsoleApp1
         {
             Console.WriteLine("Введите число для перевода в двадцатеричную систему счисления");
             string a;
-            //a = Console.ReadLine();
+            a = Console.ReadLine();
             //int b;
             //b = Convert.ToInt32(a);
             //string result = "";

@@ -22,7 +22,7 @@ namespace lab5_proj
                 }
                 catch
                 {
-                    //Console.WriteLine("Ввод выполнен некорректно");
+                    Console.WriteLine("Ввод выполнен некорректно");
                 }
             }
             //Console.WriteLine("Введите длину массива");
